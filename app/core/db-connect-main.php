@@ -21,8 +21,8 @@ $debug_mode = "ON";
     {
        
     $dbhost_site = "localhost";
-    $dbusername_site = "root";
-    $dbpassword_site = "root";
+    $dbusername_site = "freightos1";
+    $dbpassword_site = "freightos1";
     $dbname_site = "freightos";
         
     }

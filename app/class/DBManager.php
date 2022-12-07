@@ -6,6 +6,10 @@ if (defined('STDIN') ) {
   defined('START') or die;
 }//close of else of if (defined('STDIN') ) {
 
+include("PDOEx.php");
+include("Logger.php");
+include("../app/core/db-connect-main.php");
+
 
 /*
  * DB Class
@@ -16,6 +20,7 @@ class DB{
 
     private $dbcon; 
     private $objDBLog; 
+    use Logger;
     
     public function __construct(){		
         global $dbhost_site, $dbusername_site, $dbpassword_site, $dbname_site; 

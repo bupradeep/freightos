@@ -12,12 +12,12 @@ if (defined('STDIN') ) {
  * This class is used for database related (connect, insert, update, and delete) operations
  */
  
-class Logger{
+trait Logger{
 
-    private $logfile; 
-    private $dbUsername;
-    private $dbPassword;
-    private $dbName;
+    public $logfile; 
+    public $dbUsername;
+    public $dbPassword;
+    public $dbName;
 
     public function __construct($filename, $dailylog = false){	
         global $current_epoch, $siteLogPath;
